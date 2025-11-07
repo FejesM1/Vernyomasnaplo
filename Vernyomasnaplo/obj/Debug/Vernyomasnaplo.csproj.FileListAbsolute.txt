@@ -1,0 +1,7 @@
+C:\Users\nemethi\Documents\ni\c#\Vernyomasnaplo\bin\Debug\Vernyomasnaplo.exe.config
+C:\Users\nemethi\Documents\ni\c#\Vernyomasnaplo\bin\Debug\Vernyomasnaplo.exe
+C:\Users\nemethi\Documents\ni\c#\Vernyomasnaplo\bin\Debug\Vernyomasnaplo.pdb
+C:\Users\nemethi\Documents\ni\c#\Vernyomasnaplo\obj\Debug\Vernyomasnaplo.csproj.AssemblyReference.cache
+C:\Users\nemethi\Documents\ni\c#\Vernyomasnaplo\obj\Debug\Vernyomasnaplo.csproj.CoreCompileInputs.cache
+C:\Users\nemethi\Documents\ni\c#\Vernyomasnaplo\obj\Debug\Vernyomasnaplo.exe
+C:\Users\nemethi\Documents\ni\c#\Vernyomasnaplo\obj\Debug\Vernyomasnaplo.pdb
