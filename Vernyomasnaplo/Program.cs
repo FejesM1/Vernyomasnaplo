@@ -160,17 +160,26 @@ namespace Vernyomasnaplo
                 switch (Console.ReadKey().Key)
                 {
                     case ConsoleKey.Enter:
-
-                        
+                        int szin = Szinvalaszto();
+                        if (alaphatter != szin && alapszin!=szin)
+                        {
                             megy = false;
                             if (aktualis == 0)
-                        {
-                            alapszin = Szinvalaszto();
+                            {
+                                alapszin = szin;
+                            }
+                            else
+                            {
+                                alaphatter = szin;
+                            }
                         }
                         else
                         {
-                            alaphatter = Szinvalaszto();
+                            Console.Clear();
+                            Console.WriteLine("Nem lehet a betű és a háttér azonos színű! Enterre tovább!!!");
+                            Console.ReadLine();
                         }
+
 
                             break;
 
