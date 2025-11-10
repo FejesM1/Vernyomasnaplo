@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\nemethi\\Documents\\ni\\c#\\",
+  "WorkspaceRootPath": "C:\\Users\\Imre\\source\\repos\\Vernyomasnaplo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{860A791B-34C1-4D95-A0B4-B197DEB86302}|Vernyomasnaplo\\Vernyomasnaplo.csproj|c:\\users\\nemethi\\documents\\ni\\c#\\vernyomasnaplo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{860A791B-34C1-4D95-A0B4-B197DEB86302}|Vernyomasnaplo\\Vernyomasnaplo.csproj|c:\\users\\imre\\source\\repos\\vernyomasnaplo\\vernyomasnaplo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{860A791B-34C1-4D95-A0B4-B197DEB86302}|Vernyomasnaplo\\Vernyomasnaplo.csproj|solutionrelative:vernyomasnaplo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\nemethi\\Documents\\ni\\c#\\Vernyomasnaplo\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Imre\\source\\repos\\Vernyomasnaplo\\Vernyomasnaplo\\Program.cs",
               "RelativeDocumentMoniker": "Vernyomasnaplo\\Program.cs",
-              "ToolTip": "C:\\Users\\nemethi\\Documents\\ni\\c#\\Vernyomasnaplo\\Program.cs",
+              "ToolTip": "C:\\Users\\Imre\\source\\repos\\Vernyomasnaplo\\Vernyomasnaplo\\Program.cs",
               "RelativeToolTip": "Vernyomasnaplo\\Program.cs",
-              "ViewState": "AgIAAHgAAAAAAAAAAAAcwIYAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAmwLEAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-07T06:52:45.203Z",
               "EditorCaption": ""

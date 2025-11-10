@@ -23,7 +23,8 @@ namespace Vernyomasnaplo
                
                 ConsoleColor.Cyan,
                 ConsoleColor.Magenta,
-                ConsoleColor.Gray
+                ConsoleColor.Gray,
+                ConsoleColor.Black
             };
         static string[] szinek_neve = {
                     "Zöld",
@@ -33,15 +34,18 @@ namespace Vernyomasnaplo
                   
                     "Cian",
                     "Magenta",
-                    "Szürke"
+                    "Szürke",
+                    "Fekete"
                 };
         static int szinek_szama=szinek.Length;
         static int alapszin = 0;
-        static int alaphatter = 0;
+        static int alaphatter = 7;
+
         static void Main(string[] args)
         {
             while (fut)
             {
+                Console.BackgroundColor=szinek[alaphatter];
                 try
                 {
                     Console.Clear();
@@ -132,17 +136,75 @@ namespace Vernyomasnaplo
         }
         static void Beallit()
         {
-            
-        bool kivalaszt=true;
+            string[] kiirni = { "Betű", "Háttér" };
+            bool megy = true;
+            int aktualis = 0;
+            while (megy) { 
+                Console.Clear();
+
+                for (int i=0; i<kiirni.Length; i++)
+                {
+                    if (aktualis == i)
+                    {
+                        
+                        Console.ForegroundColor = szinek[aktualis];
+                        Console.WriteLine(kiirni[i]);
+                        Console.ForegroundColor = ConsoleColor.White;
+                    }
+                    else
+                    {
+                        Console.WriteLine(kiirni[i]);
+                    }
+                }
+
+                switch (Console.ReadKey().Key)
+                {
+                    case ConsoleKey.Enter:
+
+                        
+                            megy = false;
+                            if (aktualis == 0)
+                        {
+                            alapszin = Szinvalaszto();
+                        }
+                        else
+                        {
+                            alaphatter = Szinvalaszto();
+                        }
+
+                            break;
+
+                    case ConsoleKey.DownArrow:
+                        if (aktualis < kiirni.Length-1)
+                        {
+                            aktualis++;
+                        }
+                        break;
+
+                    case ConsoleKey.UpArrow:
+                        if (aktualis > 0)
+                        {
+                            aktualis--;
+                        }
+                        break;
+                }
+
+            }
+        }
+        
+        static int Szinvalaszto()
+        {
+            bool kivalaszt = true;
             int akt_szin_szama = 0;
             while (kivalaszt)
             {
                 Console.Clear();
-                Console.WriteLine("Betűszín beállítása:");
+             
                 Console.WriteLine();
                 for (int i = 0; i < szinek.Length; i++)
                 {
-                    if (i==akt_szin_szama) {
+                    if (i == akt_szin_szama)
+                    {
                         Console.ForegroundColor = szinek[akt_szin_szama];
                         Console.WriteLine(szinek[i]);
                         Console.ForegroundColor = ConsoleColor.White;
@@ -157,7 +219,7 @@ namespace Vernyomasnaplo
                 {
                     case ConsoleKey.Enter:
                         kivalaszt = false;
-                        alapszin=akt_szin_szama;
+                      
                         break;
                     case ConsoleKey.UpArrow:
                         if (akt_szin_szama > 0)
@@ -182,10 +244,7 @@ namespace Vernyomasnaplo
 
                 }
             }
-        
-
-
-            
+            return akt_szin_szama;
         }
         static void Kilep()
         {

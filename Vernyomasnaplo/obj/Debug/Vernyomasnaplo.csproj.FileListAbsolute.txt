@@ -5,3 +5,11 @@ C:\Users\nemethi\Documents\ni\c#\Vernyomasnaplo\obj\Debug\Vernyomasnaplo.csproj.
 C:\Users\nemethi\Documents\ni\c#\Vernyomasnaplo\obj\Debug\Vernyomasnaplo.csproj.CoreCompileInputs.cache
 C:\Users\nemethi\Documents\ni\c#\Vernyomasnaplo\obj\Debug\Vernyomasnaplo.exe
 C:\Users\nemethi\Documents\ni\c#\Vernyomasnaplo\obj\Debug\Vernyomasnaplo.pdb
+C:\Users\Imre\Source\Repos\Vernyomasnaplo\Vernyomasnaplo\bin\Debug\Vernyomasnaplo.exe.config
+C:\Users\Imre\Source\Repos\Vernyomasnaplo\Vernyomasnaplo\bin\Debug\Vernyomasnaplo.exe
+C:\Users\Imre\Source\Repos\Vernyomasnaplo\Vernyomasnaplo\bin\Debug\Vernyomasnaplo.pdb
+C:\Users\Imre\Source\Repos\Vernyomasnaplo\Vernyomasnaplo\obj\Debug\Vernyomasnaplo.csproj.AssemblyReference.cache
+C:\Users\Imre\Source\Repos\Vernyomasnaplo\Vernyomasnaplo\obj\Debug\Vernyomasnaplo.exe.config
+C:\Users\Imre\Source\Repos\Vernyomasnaplo\Vernyomasnaplo\obj\Debug\Vernyomasnaplo.csproj.CoreCompileInputs.cache
+C:\Users\Imre\Source\Repos\Vernyomasnaplo\Vernyomasnaplo\obj\Debug\Vernyomasnaplo.exe
+C:\Users\Imre\Source\Repos\Vernyomasnaplo\Vernyomasnaplo\obj\Debug\Vernyomasnaplo.pdb
