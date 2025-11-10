@@ -205,14 +205,15 @@ namespace Vernyomasnaplo
                 {
                     if (i == akt_szin_szama)
                     {
+
                         Console.ForegroundColor = szinek[akt_szin_szama];
-                        Console.WriteLine(szinek[i]);
+                        Console.WriteLine(szinek_neve[i]);
                         Console.ForegroundColor = ConsoleColor.White;
 
                     }
                     else
                     {
-                        Console.WriteLine(szinek[i]);
+                        Console.WriteLine(szinek_neve[i]);
                     }
                 }
                 switch (Console.ReadKey().Key)
