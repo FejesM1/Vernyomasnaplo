@@ -12,8 +12,8 @@ namespace Vernyomasnaplo
     {
         static bool fut=true;
         static bool kivalasztva = false;
-        static string[] menupontok = { "Regisztrálás", "Adatok módosítása","Adatok megjelenítése", "Adat törlése", "Beállítások", "Kilépés" };
-        static Action[] fuggvenyek = { Regisztral, Modosit, Megjelenit, Torol, Beallit, Kilep,};
+        static string[] menupontok = { "Regisztrálás", "Adatok hozzáadása", "Adatok módosítása","Adatok megjelenítése", "Adat törlése", "Beállítások", "Kilépés" };
+        static Action[] fuggvenyek = { Regisztral, AdatokHozzaadasa, Modosit, Megjelenit, Torol, Beallit, Kilep,};
         static int aktualis_menu_pont = 0;
         static int menupontok_szama=menupontok.Length;
         static ConsoleColor[] szinek = {
@@ -44,6 +44,12 @@ namespace Vernyomasnaplo
 
         static void Main(string[] args)
         {
+            adatok.Clear();
+            foreach (var sor in File.ReadAllLines("Adatok.txt"))
+            {
+                adatok.Add(sor);
+            }
+
             while (fut)
             {
                 Console.BackgroundColor=szinek[alaphatter];
@@ -120,14 +126,38 @@ namespace Vernyomasnaplo
         static void Modosit()
         {
             Console.Clear();
-            Console.WriteLine("Módosít");
-            Console.ReadLine();
+            int bekeres;
+            string adat;
+
+            for (int i = 0; i < adatok.Count; i++)
+            {
+                string[] mezok = adatok[i].Split(';');
+                Console.WriteLine($"Név: {mezok[0]}, Vérnyomás: {mezok[1]}, Pulzus: {mezok[2]}");
+            }
+
+            Console.Write("Add a módosítandó sornak a számát: ");
+            bekeres = int.Parse(Console.ReadLine()) - 1;
+            if (bekeres < adatok.Count && bekeres >= 0)
+            {
+                adatok.RemoveAt(bekeres);
+                File.WriteAllText("Adatok.txt", "");
+                for (int i = 0; i < adatok.Count; i++)
+                {
+                    adat = adatok[i];
+                    File.WriteAllText("Adatok.txt", adat + Environment.NewLine);
+                }
+                Console.WriteLine("Adat módosítva.");
+            }
+            else
+            {
+                Console.WriteLine("Nincs ilyen sorszámú adat!");
+                Console.ReadLine();
+            }
         }
         static List<string> adatok = new List<string>();
         static void Megjelenit()
         {
             Console.Clear();
-            string adat1, adat2, adat3;
             if (!File.Exists("Adatok.txt"))
             {
                 Console.WriteLine("Az Adatok.txt nem található!");
@@ -135,21 +165,20 @@ namespace Vernyomasnaplo
             else
             {
                 Console.WriteLine("Adatok megjelenítése\n");
-                adatok.Clear();
-                foreach (var sor in File.ReadAllLines("Adatok.txt"))
-                {
-                    adatok.Add(sor);
-                }
                 for (int i = 0; i < adatok.Count; i++)
                 {
-                    adat1 = adatok[i].Split(';')[0];
-                    adat2 = adatok[i].Split(';')[1];
-                    adat3 = adatok[i].Split(';')[2];
-                    Console.WriteLine($"Név: {adat1}, Vérnyomás: {adat2}, Pulzus: {adat3}");
+                    string[] mezok = adatok[i].Split(';');
+                    Console.WriteLine($"Név: {mezok[0]}, Vérnyomás: {mezok[1]}, Pulzus: {mezok[2]}");
                 }
                 Console.WriteLine("\nNyomjon le egy billentyűt a kilépéshez.");
                 Console.ReadLine();
             }
+        }
+        static void AdatokHozzaadasa() 
+        { 
+            Console.Clear();
+            Console.WriteLine("Adatok hozzáadása");
+            Console.ReadLine();
         }
         static void Torol()
         {
