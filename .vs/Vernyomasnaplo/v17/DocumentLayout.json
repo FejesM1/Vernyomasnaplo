@@ -1,10 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Imre\\source\\repos\\Vernyomasnaplo\\",
+  "WorkspaceRootPath": "E:\\K\u00F3d\\C#\\V\u00E9rnyom\u00E1snapl\u00F3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{860A791B-34C1-4D95-A0B4-B197DEB86302}|Vernyomasnaplo\\Vernyomasnaplo.csproj|c:\\users\\imre\\source\\repos\\vernyomasnaplo\\vernyomasnaplo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{860A791B-34C1-4D95-A0B4-B197DEB86302}|Vernyomasnaplo\\Vernyomasnaplo.csproj|e:\\k\u00F3d\\c#\\v\u00E9rnyom\u00E1snapl\u00F3\\vernyomasnaplo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{860A791B-34C1-4D95-A0B4-B197DEB86302}|Vernyomasnaplo\\Vernyomasnaplo.csproj|solutionrelative:vernyomasnaplo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{860A791B-34C1-4D95-A0B4-B197DEB86302}|Vernyomasnaplo\\Vernyomasnaplo.csproj|e:\\k\u00F3d\\c#\\v\u00E9rnyom\u00E1snapl\u00F3\\vernyomasnaplo\\adatok.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{860A791B-34C1-4D95-A0B4-B197DEB86302}|Vernyomasnaplo\\Vernyomasnaplo.csproj|solutionrelative:vernyomasnaplo\\adatok.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,17 +18,38 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Adatok.txt",
+              "DocumentMoniker": "E:\\K\u00F3d\\C#\\V\u00E9rnyom\u00E1snapl\u00F3\\Vernyomasnaplo\\Adatok.txt",
+              "RelativeDocumentMoniker": "Vernyomasnaplo\\Adatok.txt",
+              "ToolTip": "E:\\K\u00F3d\\C#\\V\u00E9rnyom\u00E1snapl\u00F3\\Vernyomasnaplo\\Adatok.txt",
+              "RelativeToolTip": "Vernyomasnaplo\\Adatok.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-11-12T16:40:07.038Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Imre\\source\\repos\\Vernyomasnaplo\\Vernyomasnaplo\\Program.cs",
+              "DocumentMoniker": "E:\\K\u00F3d\\C#\\V\u00E9rnyom\u00E1snapl\u00F3\\Vernyomasnaplo\\Program.cs",
               "RelativeDocumentMoniker": "Vernyomasnaplo\\Program.cs",
-              "ToolTip": "C:\\Users\\Imre\\source\\repos\\Vernyomasnaplo\\Vernyomasnaplo\\Program.cs",
+              "ToolTip": "E:\\K\u00F3d\\C#\\V\u00E9rnyom\u00E1snapl\u00F3\\Vernyomasnaplo\\Program.cs",
               "RelativeToolTip": "Vernyomasnaplo\\Program.cs",
-              "ViewState": "AgIAAJkAAAAAAAAAAAAmwKMAAABAAAAAAAAAAA==",
+              "ViewState": "AgIAAHcAAAAAAAAAAAA9wJMAAABcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-07T06:52:45.203Z",
               "EditorCaption": ""

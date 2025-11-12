@@ -127,6 +127,7 @@ namespace Vernyomasnaplo
         static void Megjelenit()
         {
             Console.Clear();
+            string adat1, adat2, adat3;
             if (!File.Exists("Adatok.txt"))
             {
                 Console.WriteLine("Az Adatok.txt nem található!");
@@ -141,7 +142,10 @@ namespace Vernyomasnaplo
                 }
                 for (int i = 0; i < adatok.Count; i++)
                 {
-                    Console.WriteLine(adatok[i]);
+                    adat1 = adatok[i].Split(';')[0];
+                    adat2 = adatok[i].Split(';')[1];
+                    adat3 = adatok[i].Split(';')[2];
+                    Console.WriteLine($"Név: {adat1}, Vérnyomás: {adat2}, Pulzus: {adat3}");
                 }
                 Console.WriteLine("\nNyomjon le egy billentyűt a kilépéshez.");
                 Console.ReadLine();
