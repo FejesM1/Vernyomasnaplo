@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
@@ -12,7 +13,7 @@ namespace Vernyomasnaplo
         static bool fut=true;
         static bool kivalasztva = false;
         static string[] menupontok = { "Regisztrálás", "Adatok módosítása","Adatok megjelenítése", "Adat törlése", "Beállítások", "Kilépés" };
-        static Action[] fuggvenyek = { Regisztral, Modosit, Megjelenit, Torol, Beallit, Kilep };
+        static Action[] fuggvenyek = { Regisztral, Modosit, Megjelenit, Torol, Beallit, Kilep,};
         static int aktualis_menu_pont = 0;
         static int menupontok_szama=menupontok.Length;
         static ConsoleColor[] szinek = {
@@ -122,11 +123,29 @@ namespace Vernyomasnaplo
             Console.WriteLine("Módosít");
             Console.ReadLine();
         }
+        static List<string> adatok = new List<string>();
         static void Megjelenit()
         {
             Console.Clear();
-            Console.WriteLine("megjelenit");
-            Console.ReadLine();
+            if (!File.Exists("Adatok.txt"))
+            {
+                Console.WriteLine("Az Adatok.txt nem található!");
+            }
+            else
+            {
+                Console.WriteLine("Adatok megjelenítése\n");
+                adatok.Clear();
+                foreach (var sor in File.ReadAllLines("Adatok.txt"))
+                {
+                    adatok.Add(sor);
+                }
+                for (int i = 0; i < adatok.Count; i++)
+                {
+                    Console.WriteLine(adatok[i]);
+                }
+                Console.WriteLine("\nNyomjon le egy billentyűt a kilépéshez.");
+                Console.ReadLine();
+            }
         }
         static void Torol()
         {
@@ -256,6 +275,7 @@ namespace Vernyomasnaplo
             }
             return akt_szin_szama;
         }
+
         static void Kilep()
         {
             fut = false;
