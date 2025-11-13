@@ -91,9 +91,6 @@ namespace Vernyomasnaplo
                             }
                             break;
 
-
-
-
                         default:
                             Console.Beep();
                             break;
@@ -137,9 +134,18 @@ namespace Vernyomasnaplo
 
             Console.Write("Add a módosítandó sornak a számát: ");
             bekeres = int.Parse(Console.ReadLine()) - 1;
+            Console.Write("Adja meg a nevét: ");
+            string bekeres2 = Console.ReadLine();
+            Console.Write("Adja meg a vérnyomását: ");
+            int bekeres3 = int.Parse(Console.ReadLine());
+            Console.Write("Adja meg a pulzusát: ");
+            int bekeres4 = int.Parse(Console.ReadLine());
+            var keszadat = bekeres2+";"+bekeres3+";"+bekeres4; 
+
             if (bekeres < adatok.Count && bekeres >= 0)
             {
                 adatok.RemoveAt(bekeres);
+                adatok.Insert(bekeres,keszadat);
                 File.WriteAllText("Adatok.txt", "");
                 for (int i = 0; i < adatok.Count; i++)
                 {

@@ -21,3 +21,12 @@ E:\Kód\C#\Vérnyomásnapló\Vernyomasnaplo\obj\Debug\Vernyomasnaplo.csproj.Core
 E:\Kód\C#\Vérnyomásnapló\Vernyomasnaplo\obj\Debug\Vernyomasnaplo.exe
 E:\Kód\C#\Vérnyomásnapló\Vernyomasnaplo\obj\Debug\Vernyomasnaplo.pdb
 E:\Kód\C#\Vérnyomásnapló\Vernyomasnaplo\bin\Debug\Adatok.txt
+C:\Users\szilagyiba\Desktop\Vernyomasnaplo\Vernyomasnaplo\bin\Debug\Adatok.txt
+C:\Users\szilagyiba\Desktop\Vernyomasnaplo\Vernyomasnaplo\bin\Debug\Vernyomasnaplo.exe.config
+C:\Users\szilagyiba\Desktop\Vernyomasnaplo\Vernyomasnaplo\bin\Debug\Vernyomasnaplo.exe
+C:\Users\szilagyiba\Desktop\Vernyomasnaplo\Vernyomasnaplo\bin\Debug\Vernyomasnaplo.pdb
+C:\Users\szilagyiba\Desktop\Vernyomasnaplo\Vernyomasnaplo\obj\Debug\Vernyomasnaplo.csproj.AssemblyReference.cache
+C:\Users\szilagyiba\Desktop\Vernyomasnaplo\Vernyomasnaplo\obj\Debug\Vernyomasnaplo.exe.config
+C:\Users\szilagyiba\Desktop\Vernyomasnaplo\Vernyomasnaplo\obj\Debug\Vernyomasnaplo.csproj.CoreCompileInputs.cache
+C:\Users\szilagyiba\Desktop\Vernyomasnaplo\Vernyomasnaplo\obj\Debug\Vernyomasnaplo.exe
+C:\Users\szilagyiba\Desktop\Vernyomasnaplo\Vernyomasnaplo\obj\Debug\Vernyomasnaplo.pdb
